@@ -55,17 +55,20 @@ A saída no terminal será parecida com a seguinte:
 Escaneando vulnerabilidades na URL: http://www.exemplo.com/pagina
 ```
 - Verificando vulnerabilidade de SQL Injection em http://www.exemplo.com/pagina
-[!] Possível vulnerabilidade de SQL Injection detectada em http://www.exemplo.com/pagina' OR 1=1 --
-[*] Nenhuma vulnerabilidade de SQL Injection detectada.
+ ```
+    [!] Possível vulnerabilidade de SQL Injection detectada em http://www.exemplo.com/pagina' OR 1=1 --
+    [*] Nenhuma vulnerabilidade de SQL Injection detectada.
+ ```
 
 - Verificando vulnerabilidade de XSS em http://www.exemplo.com/pagina
-[!] Possível vulnerabilidade de XSS detectada em http://www.exemplo.com/pagina<script>alert("XSS")</script>
-[*] Nenhuma vulnerabilidade de XSS detectada.
-
+```
+  [!] Possível vulnerabilidade de XSS detectada em http://www.exemplo.com/pagina<script>alert("XSS")</script>
+  [*] Nenhuma vulnerabilidade de XSS detectada.
+```
 - Verificando vulnerabilidade de LFI em http://www.exemplo.com/pagina
-[*] Nenhuma vulnerabilidade de LFI detectada.
-
-...
+```
+  [*] Nenhuma vulnerabilidade de LFI detectada.
+```
 
 ### Parâmetros de Configuração 🔐
 Você pode configurar os testes de vulnerabilidade modificando os payloads dentro de cada função correspondente (check_sql_injection, check_xss, etc.). Caso queira adicionar novas verificações, basta incluir mais testes conforme necessário.
